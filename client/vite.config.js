@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/crmdashboardone/',   // 👈 Important for subfolder hosting
   plugins: [tailwindcss(), react()],
     server: {
     host: '0.0.0.0',     // 🔓 Allow access from other devices

@@ -4,10 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/crmdashboardone/',   // 👈 Important for subfolder hosting
+  base: './',   // ✅ Fix: use relative paths for Amplify hosting
   plugins: [tailwindcss(), react()],
-    server: {
-    host: '0.0.0.0',     // 🔓 Allow access from other devices
-    port: 5173,           // Optional: force same port if needed
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
   },
 })
